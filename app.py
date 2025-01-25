@@ -3,7 +3,7 @@ from flask_cors import CORS
 from flask_jwt_extended import JWTManager
 from flask_restful import Api
 
-# from view.pokedex_view import HealthCkeckView,PokedexGeneralView, PokedexFilteredView
+from view.pokedex_view import HealthCkeckView,PokedexGeneralView, PokedexFilteredView
 
 app = Flask(__name__)
 
@@ -27,8 +27,6 @@ Estado de salud del servicio:
 - http://localhost:5000/pokedex/ping
 
 """
-
-
 api.add_resource(PokedexGeneralView,'/pokedex')
 api.add_resource(PokedexFilteredView,'/pokedex/filter')
 api.add_resource(HealthCkeckView,'/pokedex/ping')
