@@ -27,12 +27,18 @@ jobs:
     #     git checkout -b release
     #     git push -f -u origin release      
 
-    - name: Merge HU -> Develop
-      uses: tukasz/direct-merge-action@master
-      with:
-        # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        source-branch: feature/hu01
-        target-branch: develop
+    - name: Merge feature/hu01 into develop
+      run: |
+        git checkout develop
+        git merge feature/hu01
+        git push origin develop
+
+    # - name: Merge HU -> Develop
+    #   uses: tukasz/direct-merge-action@master
+    #   with:
+    #     # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #     source-branch: feature/hu01
+    #     target-branch: develop
 
     # - name: Correr Pruebas
     #   id: correr-pruebas
