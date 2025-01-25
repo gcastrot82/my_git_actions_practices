@@ -31,6 +31,4 @@ api.add_resource(PokedexGeneralView,'/pokedex')
 api.add_resource(PokedexFilteredView,'/pokedex/filter')
 api.add_resource(HealthCkeckView,'/pokedex/ping')
 
-
-
 jwt = JWTManager(app)
