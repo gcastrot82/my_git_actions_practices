@@ -30,7 +30,7 @@ jobs:
     - name: Merge HU -> Develop
       uses: tukasz/direct-merge-action@master
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         source-branch: feature/hu01
         target-branch: develop
 
