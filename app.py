@@ -27,6 +27,8 @@ Estado de salud del servicio:
 - http://localhost:5000/pokedex/ping
 
 """
+
+
 api.add_resource(PokedexGeneralView,'/pokedex')
 api.add_resource(PokedexFilteredView,'/pokedex/filter')
 api.add_resource(HealthCkeckView,'/pokedex/ping')
