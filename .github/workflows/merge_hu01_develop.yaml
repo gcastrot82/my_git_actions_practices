@@ -33,8 +33,8 @@ jobs:
     - name: Merge feature/hu01 into develop
       run: |
         # Configurar Git con el token de GitHub para autenticación
-        git config user.name "gcastrot28"
-        git config user.email "gcastrot28@hotmail.com"
+        git config user.name "gcastrot82"
+        git config user.email "gcastrot82@hotmail.com"
 
         # Validar si la rama develop existe; si no, crearla
         git fetch origin develop || git checkout -b develop
