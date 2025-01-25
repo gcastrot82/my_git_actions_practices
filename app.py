@@ -3,7 +3,7 @@ from flask_cors import CORS
 from flask_jwt_extended import JWTManager
 from flask_restful import Api
 
-from view.pokedex_view import HealthCkeckView,PokedexGeneralView, PokedexFilteredView
+# from view.pokedex_view import HealthCkeckView,PokedexGeneralView, PokedexFilteredView
 
 app = Flask(__name__)
 
